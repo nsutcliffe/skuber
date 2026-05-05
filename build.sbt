@@ -48,8 +48,8 @@ val logback = "ch.qos.logback" % "logback-classic" % "1.4.6" % Runtime
 val playJson = "com.typesafe.play" %% "play-json" % "2.10.0-RC7"
 val jacksonDatabind = "com.fasterxml.jackson.core" % "jackson-databind" % "2.13.5"
 
-val awsJavaSdkCore = "com.amazonaws" % "aws-java-sdk-core" % "1.12.233"
-val awsJavaSdkSts = "com.amazonaws" % "aws-java-sdk-sts" % "1.12.233"
+val awsJavaSdkCore = "com.amazonaws" % "aws-java-sdk-core" % "1.12.638"
+val awsJavaSdkSts = "com.amazonaws" % "aws-java-sdk-sts" % "1.12.638"
 val apacheCommonsLogging = "commons-logging" % "commons-logging" % "1.3.4"
 
 
@@ -64,7 +64,7 @@ ThisBuild / licenses := Seq("APL2" -> url("http://www.apache.org/licenses/LICENS
 ThisBuild / homepage := Some(url("https://github.com/hagay3"))
 
 publishTo := sonatypePublishToBundle.value
-sonatypeCredentialHost := Sonatype.sonatype01
+sonatypeCredentialHost := sonatypeCentralHost
 ThisBuild / updateOptions := updateOptions.value.withGigahorse(false)
 
 sonatypeProjectHosting := Some(GitHubHosting("hagay3", "skuber", "hagay3@gmail.com"))
